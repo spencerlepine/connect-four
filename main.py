@@ -8,7 +8,7 @@ BOARD_ROWS = 6
 class Board():
     def __init__(self):
         self.board = [[' ' for _ in range(BOARD_COLS)] for _ in range(BOARD_ROWS)]
-        self.turns
+        self.turns = 0
         self.last_move = [-1, -1] # [r, c]
 
     def print_board(self):
